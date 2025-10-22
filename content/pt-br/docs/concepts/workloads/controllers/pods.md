@@ -60,9 +60,6 @@ qualified domain name `busybox-1.busybox-subdomain.my-namespace.svc.cluster-doma
 then by default the `hostname` command inside that Pod returns `busybox-1` and the
 `hostname --fqdn` command returns the FQDN.
 
-When both `setHostnameAsFQDN: true` and the subdomain field is set in the Pod spec,
-the kubelet writes the Pod's FQDN
-into the hostname for that Pod's namespace. In this case, both `hostname` and `hostname --fqdn`
 return the Pod's FQDN.
 
 The Pod's FQDN is constructed in the same manner as previously defined.
